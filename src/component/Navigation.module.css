@@ -1,0 +1,118 @@
+/* Navigation.module.css */
+
+/* Navbar styles */
+.navbar {
+  background-color: #d6932c;
+  padding: 5rem 0;
+}
+
+/* Hamburger button styles */
+.hamburger {
+  background: none;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 24px;
+  width: 30px;
+  padding: 0;
+  cursor: pointer;
+}
+
+.hamburger span {
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-color: white;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Adjusting for mobile view */
+@media (max-width: 768px) {
+  /* Navbar */
+  .navbar-brand {
+    display: none; /* Hide additional links on smaller screens */
+    color: #b77c29;
+  }
+
+  /* Hamburger button */
+  .hamburger {
+    margin-left: auto;
+  }
+}
+
+/* Sidebar styles */
+.sidebar {
+  background-color: white;
+  color: white;
+}
+
+/* Sidebar Links */
+.sidebarLinks {
+  display: flex;
+  flex-direction: column;
+  gap: 0rem;
+}
+
+.sidebarLinks a {
+  color: black;
+  font-size: 1.2rem;
+  text-decoration: none;
+  padding: 0.5rem;
+  transition: background-color 0.3s ease;
+}
+
+.sidebarLinks a:hover {
+  color: blue;
+}
+
+/* Social Icons */
+.socialIcons {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 2rem;
+}
+
+.socialIcons a {
+  color: white;
+  font-size: 1.5rem;
+}
+
+.text-white {
+}
+
+/* For larger screens */
+@media (min-width: 992px) {
+  .navbar-brand div {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 25%;
+    gap: 3rem;
+  }
+}
+
+.blogsTitleContainer {
+  padding: 20px 0;
+  text-align: center;
+}
+
+.blogsTitle {
+  color: white;
+  font-size: 2.5rem;
+  font-weight: bold;
+  padding-left: 250px;
+}
+
+@media (max-width: 768px) {
+  .blogsTitle {
+    font-size: 2rem;
+    padding-left: 80%;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .blogsTitle {
+    font-size: 2.25rem;
+    padding-left: 100%;
+  }
+}

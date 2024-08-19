@@ -1,0 +1,11 @@
+.footer-link {
+  color: black;
+  text-decoration: none;
+}
+
+.footer-link:hover {
+  color: blue;
+}
+.text-uppercase {
+  font-weight: bold;
+}
